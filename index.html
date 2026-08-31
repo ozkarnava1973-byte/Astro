@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para alguien especial</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: #f4f0ff;
+    font-family: Georgia, "Times New Roman", serif;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(104,82,160,.28), transparent 28%),
+      radial-gradient(circle at 80% 30%, rgba(40,90,150,.20), transparent 25%),
+      radial-gradient(circle at 50% 80%, rgba(120,80,160,.18), transparent 30%),
+      #050611;
+    overflow-x: hidden;
+  }
+  body:before {
+    content: "";
+    position: fixed; inset: 0; pointer-events: none; opacity: .65;
+    background-image:
+      radial-gradient(circle, white 1px, transparent 1.5px),
+      radial-gradient(circle, white .7px, transparent 1.2px);
+    background-size: 70px 70px, 110px 110px;
+    background-position: 0 0, 30px 40px;
+  }
+  main {
+    width: min(760px, 92%);
+    margin: 0 auto;
+    padding: 55px 0 70px;
+    position: relative;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .moon { font-size: 42px; filter: drop-shadow(0 0 14px #fff); }
+  h1 {
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: clamp(20px, 4vw, 32px);
+    margin: 18px 0 10px;
+  }
+  .subtitle { color: #c9c2dc; font-style: italic; font-size: 16px; }
+  .card {
+    background: rgba(12, 11, 28, .68);
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 22px;
+    padding: clamp(24px, 5vw, 50px);
+    box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    backdrop-filter: blur(8px);
+  }
+  .poem {
+    white-space: pre-line;
+    font-size: clamp(18px, 2.7vw, 22px);
+    line-height: 1.85;
+    text-align: center;
+  }
+  .audio {
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,.14);
+    text-align: center;
+  }
+  .audio p {
+    font-style: italic;
+    color: #d8d1e8;
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  audio { width: min(100%, 500px); }
+  .closing {
+    margin-top: 42px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  .small {
+    text-align: center;
+    color: #a9a0bd;
+    margin-top: 35px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="intro">
+    <div class="moon">🌌</div>
+    <h1>Para alguien especial</h1>
+    <div class="subtitle">Hay personas que parecen haber sido escritas en el lenguaje de las estrellas...</div>
+  </div>
+
+  <section class="card">
+    <div class="poem">Hoy, tu mirada permanece suspendida en la arquitectura silenciosa del universo,
+sigue colgada en constelaciones, vive aún en
+la antigua ciencia de brillar sin agotarse.
+
+Hoy, tu voz es una gravitación secreta,
+un pulso de astros que ordena el caos,
+es una galaxia, un planeta sin frío.
+
+El pulso de tus manos
+no es de esta tierra; es tan colosal como los anillos de Saturno,
+tan perfecto como Mercurio y su proximidad al Sol.
+
+Habita en tu cabello el brillo de la luna llena,
+en ese instante solemne donde la noche
+se inclina con reverencia ante su propia claridad.
+Eres ese fulgor: intacto,
+ceremonial,
+inevitable.
+
+Y si los planetas describen órbitas perfectas,
+es porque alguna vez intuyeron tu nombre
+y decidieron imitar la forma en que giras:
+sin tocar, pero permaneciendo.
+
+No eres pasajera en este cosmos.
+Eres eje.
+Eres centro.
+
+Una conjunción irrepetible de materia y misterio,
+un lenguaje antiguo escrito en luz,
+una verdad que ni el tiempo se atreve a contradecir.
+
+Por eso, cuando el cielo se abre en su vastedad infinita,
+no lo contemplo buscando respuestas…
+
+lo contemplo
+reconociéndote.
+
+Que tu día sea tan hermoso como ese universo
+que solo en el brillo de tus ojos puede habitar.</div>
+
+    <div class="audio">
+      <p>Hay palabras que se escriben...<br>y otras que necesitan convertirse en música.</p>
+      <audio controls preload="metadata">
+        <source src="hoy-es-el-dia.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir este audio.
+      </audio>
+    </div>
+
+    <div class="closing">✨ Feliz día ✨</div>
+  </section>
+
+  <div class="small">🌙</div>
+</main>
+</body>
+</html>
